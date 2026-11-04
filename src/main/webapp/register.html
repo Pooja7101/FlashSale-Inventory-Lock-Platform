@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FlashSale - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>FlashSale Registration</h1>
+
+    <form action="register" method="post">
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required>
+        <br><br>
+
+        <label>Select Role:</label><br>
+        <select name="role" required>
+            <option value="customer">Customer</option>
+            <option value="vendor">Vendor</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>

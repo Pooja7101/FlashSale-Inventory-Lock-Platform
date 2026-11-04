@@ -1,0 +1,249 @@
+
+/* =================================
+   FLASHSale - PURPLE THEME
+================================= */
+
+:root {
+    --primary: #573B8A;
+    --secondary: #8064A9;
+    --light-purple: #F2EDFA;
+    --background: #F8F6FC;
+    --white: #FFFFFF;
+    --text: #302744;
+    --muted: #756B83;
+    --border: #E4DCEC;
+    --success: #27845B;
+    --danger: #C44757;
+}
+
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif !important;
+    background: var(--background) !important;
+    color: var(--text) !important;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    ) !important;
+
+    color: var(--white) !important;
+    padding: 25px !important;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(50, 30, 80, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Main containers */
+
+.container {
+    max-width: 1100px;
+    margin: 35px auto !important;
+    padding: 30px !important;
+    background: var(--white) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 5px 20px rgba(60, 40, 90, 0.08);
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    color: var(--primary);
+}
+
+header h1 {
+    color: var(--white);
+}
+
+p {
+    color: var(--muted);
+}
+
+/* Links and buttons */
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+button,
+input[type="submit"],
+.back,
+.menu a,
+.filters a {
+    background: var(--primary) !important;
+    color: var(--white) !important;
+    border: none !important;
+    border-radius: 7px !important;
+    padding: 11px 18px !important;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.back:hover,
+.menu a:hover,
+.filters a:hover {
+    background: var(--secondary) !important;
+    transform: translateY(-1px);
+}
+
+/* Forms */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin: 7px 0 15px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--white);
+    color: var(--text);
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(128, 100, 169, 0.12);
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+th {
+    background: var(--primary) !important;
+    color: var(--white) !important;
+    padding: 13px !important;
+    text-align: left;
+}
+
+td {
+    padding: 12px !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text);
+}
+
+tr:nth-child(even) {
+    background: var(--light-purple) !important;
+}
+
+/* Cards */
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(60, 40, 90, 0.06);
+}
+
+/* Dashboard navigation */
+
+.menu,
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+/* Status colors */
+
+.active {
+    color: var(--success) !important;
+    font-weight: bold;
+}
+
+.expired,
+.error {
+    color: var(--danger) !important;
+    font-weight: bold;
+}
+
+.confirmed {
+    color: var(--primary) !important;
+    font-weight: bold;
+}
+
+.cancelled {
+    color: var(--muted) !important;
+    font-weight: bold;
+}
+
+/* Messages */
+
+.success {
+    color: var(--success);
+    background: #EAF6EF;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.empty {
+    text-align: center;
+    padding: 25px;
+    color: var(--muted);
+}
+
+/* Footer */
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .container {
+        margin: 15px !important;
+        padding: 18px !important;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    .menu,
+    .filters {
+        flex-direction: column;
+    }
+}
